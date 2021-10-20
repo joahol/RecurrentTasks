@@ -12,9 +12,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task name" />
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/etName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -22,12 +27,7 @@
                 android:inputType="textPersonName"
                 android:text="Name" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Task name" />
+
 
         </LinearLayout>
 
@@ -37,7 +37,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/etlblDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -45,7 +45,7 @@
                 android:text="Description" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine3"
+                android:id="@+id/etDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
