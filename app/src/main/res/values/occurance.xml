@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="occurance">
+        <item>Daily</item>
+        <item>Weekdays only</item>
+        <item>Select days</item>
+
+    </string-array>
+</resources>

@@ -17,24 +17,25 @@ public class TaskActivity extends AppCompatActivity implements TaskDialog.TaskDi
     private View content;
     private ScrollView taskScroll;
     private FloatingActionButton btnAdd;
-
+    TaskDialog td;
 
     @Override
     protected void onCreate(Bundle instance){
         Log.v("TaskActivity","onCreate");
         super.onCreate(instance);
+         td = new TaskDialog(this);
         setContentView(R.layout.activity_fullscreen);
         taskScroll = (ScrollView)findViewById(R.id.scrollViewTask);
         btnAdd =(FloatingActionButton)findViewById(R.id.floatAddButton);
-
-
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.v("TaskActivity","add pushed");
+                td.show(getSupportFragmentManager(),"addTask");
             }
         });
     }
+
 
 
     @Override
@@ -43,7 +44,7 @@ public class TaskActivity extends AppCompatActivity implements TaskDialog.TaskDi
     }
 
     @Override
-    public void onTaskAdded(DialogFragment dialog) {
-
+    public void onTaskAdded(Task newtask) {
+        Log.v("Recived",newtask.getName());
     }
 }
