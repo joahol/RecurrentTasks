@@ -2,8 +2,8 @@
 <resources>
     <string-array name="occurance">
         <item>Daily</item>
-        <item>Weekdays only</item>
-        <item>Select days</item>
+        <item>Weekdays</item>
+        <item>Select</item>
 
     </string-array>
 </resources>

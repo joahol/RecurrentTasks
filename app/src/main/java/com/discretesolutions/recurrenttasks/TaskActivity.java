@@ -23,7 +23,7 @@ public class TaskActivity extends AppCompatActivity implements TaskDialog.TaskDi
     protected void onCreate(Bundle instance){
         Log.v("TaskActivity","onCreate");
         super.onCreate(instance);
-         td = new TaskDialog(this);
+         td = new TaskDialog();
         setContentView(R.layout.activity_fullscreen);
         taskScroll = (ScrollView)findViewById(R.id.scrollViewTask);
         btnAdd =(FloatingActionButton)findViewById(R.id.floatAddButton);
